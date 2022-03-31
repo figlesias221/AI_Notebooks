@@ -35,7 +35,7 @@ class RiverCrossModel(RiverCrossEnv):
                 child = frozenset(next_state.items())
                 if not (child in to_visit or child in reached):
                     to_visit.append(child) 
-                    prev_node[child] = (node, frozenset(a))
+                    prev_node[child] = (node, a)
 
 
 
